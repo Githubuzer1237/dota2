@@ -1,0 +1,68 @@
+.card-1 {
+   background-image: url("/card-1.jpg");
+    
+}
+
+.card{
+    color: #fff;
+    padding: 26px 40px;
+    width: max-content;
+    border-radius: 23px;
+    min-height: 630px;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    h2 {
+        font-size: 184px;
+        text-align: center;
+        line-height: 1;
+        transform: skew(-10deg);
+        
+    }
+    h4 {
+        background-color: #000814;
+        width: max-content;
+        padding: 12px 24px;
+        font-size: 32px;
+        letter-spacing: 3px;
+        border-radius: 10px;
+        transform: skew(-8deg);
+        span {
+            color: #f0d130;
+        }
+
+        
+    }
+overflow: hidden;
+transition: 0.5s;
+    &:hover {
+        background-size: 140%;
+        .inner div {
+            bottom: 0;
+        }
+
+    }
+    .inner {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 10px;
+        margin-top: auto;
+       div {
+        background-color: #DA4343;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        flex-direction: column;
+        padding: 12px;
+        border-radius: 12px;
+        font-weight: 400;
+        font-size: 12px;
+        position: relative;
+        bottom: -150%;
+        transition: 0.5s;
+
+       }
+    }
+}
